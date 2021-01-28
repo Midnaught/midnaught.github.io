@@ -1,0 +1,113 @@
+/* credit to https://www.w3schools.com/ for general pointers/open source css */
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    font-family: Lucida Bright, sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: #000000;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.icon {
+    height: 50px;
+}
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+nav {
+    position: absolute;
+    background-color: #451010;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 15px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #8a1515;
+}
+
+.navcontent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+}
+
+.bg{
+    background-color: #181721;
+    padding: 0px 40px 30px
+}
+
+.footer{
+    background-color: #000000
+}
+
+.footer p{
+    color: #ffffff;
+    font-size: .8em;
+    padding: 15px 40px 15px;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 15px 40px 15px;
+    color: #000000;
+
+}
+p{
+    line-height: 1.6;
+    font-size: 1em;
+    padding: 0 40px;
+    text-align: center;
+    color: #000000;
+}
