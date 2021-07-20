@@ -1,0 +1,95 @@
+.icon {
+    padding-left: 30px;
+    text-decoration: none;
+}
+.scale {
+    padding-left: 15px;
+    height: 50px;
+    width: 50px;
+}
+.icon:hover{
+    opacity: 0.7;
+}
+.fa-github-square{
+    font-size: 3em;
+    color: #333333;
+    padding-right: 30px
+}
+.fa-discord{
+    font-size: 2.8em;
+    padding-top: 4px;
+    color: #750000;
+}
+
+.fa-envelope{
+    font-size: 2.8em;
+    padding-top: 2px;
+	padding-right: 30px;
+    color: #750000;
+}
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+nav {
+    position: absolute;
+    background-color: #222222;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 15px;
+    text-align: center;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #8a1515;
+}
+
+.navcontent {
+    display: flex;
+    justify-content: center;
+    padding: 0 1em;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+}
