@@ -1,2 +1,2 @@
 # midnaught.github.io
-used to be a resource repository but since people can't behave, we made it private last year & throw videos on this
+this was supposed to be a showcase of my work but honestly i just love throwing random videos on it instead
